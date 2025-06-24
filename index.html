@@ -224,7 +224,7 @@ html, body {
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">// Create and configure background music audio
 window.backgroundMusic = new Audio("Unicornbackgroundmusic.mp3");
 window.backgroundMusic.loop = true;
-window.backgroundMusic.volume = 0.075;
+window.backgroundMusic.volume = 0.040;
 window.backgroundMusic.preload = "auto";
 
 // Function to start playing on first user interaction
@@ -260,24 +260,24 @@ $(document).on(':passagedisplay', function () {
 });
 </script><tw-passagedata pid="1" name="A new predator Correct" tags="" position="825,1000" size="100,100">&lt;&lt;set $fullpath += &quot; → A new predator correct&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 5px;&quot;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 4px;&quot;&gt;
 
   &lt;!-- Success Message --&gt;
-  &lt;p style=&quot;font-size: 1.2em; font-weight: bold; margin: 8px auto; line-height: 1.4; color: #7a4fa3;&quot;&gt;
+  &lt;p style=&quot;font-size: 1.2em; font-weight: bold; margin: 6px auto; line-height: 1.3; color: #7a4fa3;&quot;&gt;
     Well done! Follow the branch down the overgrown path.
   &lt;/p&gt;
 
-  &lt;!-- Image just below the message --&gt;
+  &lt;!-- Enlarged Image --&gt;
   &lt;img src=&quot;Medal.png&quot; alt=&quot;Medal&quot;
-       style=&quot;width: 80%; max-width: 500px; display: block; margin: 10px auto;&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; display: block; margin: 6px auto 8px;&quot;&gt;
 
   &lt;!-- Navigation Link --&gt;
-  &lt;div style=&quot;margin: 8px auto;&quot;&gt;
+  &lt;div style=&quot;margin: 6px auto;&quot;&gt;
     [[🌿 Follow the trail.|Chapter 3 Climate Change]]
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;!-- Purple Glow Button Styling (if needed later) --&gt;
+&lt;!-- Optional Glow Button Styling --&gt;
 &lt;style&gt;
 .glow-button {
   background-color: #b266ff;
@@ -291,42 +291,39 @@ $(document).on(':passagedisplay', function () {
   transition: box-shadow 0.3s ease;
   margin-left: 5px;
 }
-
 .glow-button:hover {
   box-shadow: 0 0 8px rgba(178, 102, 255, 0.8);
 }
 &lt;/style&gt;
 </tw-passagedata><tw-passagedata pid="2" name="A new predator Incorrect" tags="" position="1100,900" size="100,100">&lt;&lt;set $fullpath += &quot; → A new predator incorrect&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 8px;&quot;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 4px;&quot;&gt;
 
-  &lt;!-- Condensed Paragraph with reduced margin --&gt;
-  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 10px;&quot;&gt;
+  &lt;!-- Condensed Message --&gt;
+  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 8px;&quot;&gt;
     Wait, before you make the final decision, one of your unicorn friends steps forward and shakes her head.&lt;br&gt;
     “I’m not so sure about that choice. Let’s think about this again.”&lt;br&gt;
     You listen to her advice and decide to choose again.
   &lt;/p&gt;
 
-  &lt;!-- Image with reduced margin and condensed box-shadow --&gt;
+  &lt;!-- Enlarged Image --&gt;
   &lt;img src=&quot;Unicornfriend.png&quot; alt=&quot;Unicorn friend&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 5px auto 10px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; margin: 4px auto 8px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
 
-  &lt;!-- Audio element --&gt;
+  &lt;!-- Audio Player --&gt;
   &lt;audio id=&quot;partial-correct-audio&quot; src=&quot;Unicorn_incorrect_loop.mp3&quot;&gt;&lt;/audio&gt;
-
-  &lt;!-- Play audio button with reduced margin --&gt;
-  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 5px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
+  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 4px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
     ▶️ Play Message
   &lt;/button&gt;
 
-  &lt;!-- Try again link with reduced top margin --&gt;
-  &lt;div style=&quot;margin-top: 5px;&quot;&gt;
+  &lt;!-- Try Again Link --&gt;
+  &lt;div style=&quot;margin-top: 4px;&quot;&gt;
     [[🔁 Try the question again.|Chapter 2 A new predator]]
   &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;!-- Reusable Styling --&gt;
+&lt;!-- Reusable Button Styling --&gt;
 &lt;style&gt;
 .glow-button {
   background-color: #b266ff;
@@ -339,36 +336,33 @@ $(document).on(':passagedisplay', function () {
   box-shadow: 0 0 5px rgba(178, 102, 255, 0.4);
   transition: box-shadow 0.3s ease;
 }
-
 .glow-button:hover {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
 &lt;/style&gt;
 </tw-passagedata><tw-passagedata pid="3" name="A new predator partial correct" tags="" position="575,925" size="100,100">&lt;&lt;set $fullpath += &quot; → A new predator Partial Correct&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 8px;&quot;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
-  &lt;!-- Condensed Paragraph with reduced margin --&gt;
-  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 10px;&quot;&gt;
+  &lt;!-- Condensed Paragraph --&gt;
+  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 8px;&quot;&gt;
     Wait, before you make the final decision, one of your unicorn friends steps forward and shakes her head.&lt;br&gt;
     “I’m not so sure about that choice. Let’s think about this again.”&lt;br&gt;
     You listen to her advice and decide to choose again.
   &lt;/p&gt;
 
-  &lt;!-- Image with reduced margin and condensed box-shadow --&gt;
+  &lt;!-- Enlarged Image --&gt;
   &lt;img src=&quot;Unicornfriend.png&quot; alt=&quot;Unicorn friend&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 5px auto 10px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; margin: 4px auto 8px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
 
-  &lt;!-- Audio element --&gt;
+  &lt;!-- Audio Button --&gt;
   &lt;audio id=&quot;partial-correct-audio&quot; src=&quot;Unicorn_incorrect_loop.mp3&quot;&gt;&lt;/audio&gt;
-
-  &lt;!-- Play audio button with reduced margin --&gt;
-  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 5px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
+  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 4px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
     ▶️ Play Message
   &lt;/button&gt;
 
-  &lt;!-- Try again link with reduced top margin --&gt;
-  &lt;div style=&quot;margin-top: 5px;&quot;&gt;
+  &lt;!-- Try Again Link --&gt;
+  &lt;div style=&quot;margin-top: 4px;&quot;&gt;
     [[🔁 Try the question again.|Chapter 2 A new predator]]
   &lt;/div&gt;
 
@@ -387,46 +381,44 @@ $(document).on(':passagedisplay', function () {
   box-shadow: 0 0 5px rgba(178, 102, 255, 0.4);
   transition: box-shadow 0.3s ease;
 }
-
 .glow-button:hover {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
 &lt;/style&gt;
-</tw-passagedata><tw-passagedata pid="4" name="Chapter 3 Climate Change" tags="" position="975,1050" size="100,100">&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 10px;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="4" name="Chapter 3 Climate Change" tags="" position="975,1050" size="100,100">&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
   &lt;!-- Title and Audio --&gt;
-  &lt;div style=&quot;margin-bottom: 8px;&quot;&gt;
+  &lt;div style=&quot;margin-bottom: 6px;&quot;&gt;
     &lt;div style=&quot;font-weight: bold; font-size: 1.2em;&quot;&gt;Chapter 3: Climate Change&lt;/div&gt;
-    &lt;div style=&quot;margin-top: 5px;&quot;&gt;
+    &lt;div style=&quot;margin-top: 4px;&quot;&gt;
       &lt;audio id=&quot;Unicorn_chapter3&quot; src=&quot;Unicorn_chapter_3_climate_change.mp3&quot; style=&quot;display: none;&quot;&gt;&lt;/audio&gt;
       &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Unicorn_chapter3&#39;).play()&quot;&gt;🔊&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;!-- Image --&gt;
+  &lt;!-- Enlarged Image --&gt;
   &lt;img src=&quot;Ice_Background_With_Tablet.png&quot; alt=&quot;Unicorn Ice&quot; 
-       style=&quot;width: 80%; max-width: 500px; margin: 10px auto 15px; display: block;&quot;&gt;
+       style=&quot;width: 80%; max-width: 1000px; margin: 8px auto 12px; display: block;&quot;&gt;
 
   &lt;!-- Question --&gt;
-  &lt;p style=&quot;font-size: 1.3em; font-weight: bold; line-height: 1.4; color: #7a4fa3; margin: 10px auto;&quot;&gt;
+  &lt;p style=&quot;font-size: 1.3em; font-weight: bold; line-height: 1.4; color: #7a4fa3; margin: 8px auto;&quot;&gt;
     “What is likely to happen to the Unicorn population over many generations?”
   &lt;/p&gt;
 
   &lt;!-- Read Aloud Audio --&gt;
-  &lt;div style=&quot;margin-bottom: 8px;&quot;&gt;
+  &lt;div style=&quot;margin-bottom: 6px;&quot;&gt;
     &lt;div style=&quot;font-weight: bold; font-size: 1.1em;&quot;&gt;Read questions and answers&lt;/div&gt;
-    &lt;div style=&quot;margin-top: 5px;&quot;&gt;
+    &lt;div style=&quot;margin-top: 4px;&quot;&gt;
       &lt;audio id=&quot;Unicorn_question_3&quot; src=&quot;Unicorn_question_3.mp3&quot; style=&quot;display: none;&quot;&gt;&lt;/audio&gt;
       &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Unicorn_question_3&#39;).play()&quot;&gt;🎧&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!-- Answer Choices --&gt;
-  &lt;div style=&quot;text-align: left; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 10px auto 0;&quot;&gt;
-  🦄[[Unicorns will grow thicker fur during the winter, and this feature will pass on to their babies|Climate change incorrect]]
-   🦄[[Unicorns with thick fur will become more common overtime because they survive better in the cold and pass on the feature to their offspring|Climate change correct]]&lt;br&gt;&lt;br&gt;
-    🦄[[Unicorns with thin fur will still survive because they need less food during the winter to stay alive|Climate change Partial Correct]]&lt;br&gt;&lt;br&gt;
-   
+  &lt;div style=&quot;text-align: left; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 8px auto 0;&quot;&gt;
+    🦄[[Unicorns will grow thicker fur during the winter, and this feature will pass on to their babies.|Climate change incorrect]]&lt;br&gt;&lt;br&gt;
+    🦄[[Unicorns with thick fur will become more common overtime because they survive better in the cold and pass on the feature to their offspring.|Climate change correct]]&lt;br&gt;&lt;br&gt;
+    🦄[[Unicorns with thin fur will still survive because they need less food during the winter to stay alive.|Climate change Partial Correct]]&lt;br&gt;&lt;br&gt;
   &lt;/div&gt;
 
 &lt;/div&gt;
@@ -442,34 +434,34 @@ $(document).on(':passagedisplay', function () {
   cursor: pointer;
   box-shadow: 0 0 5px rgba(178, 102, 255, 0.4);
   transition: box-shadow 0.3s ease;
-  margin: 8px auto;      /* center horizontally with vertical spacing */
-  display: inline-block; /* allow margin auto to center */
+  margin: 6px auto;      /* tighter vertical margin */
+  display: inline-block; /* center horizontally */
 }
 .glow-button:hover {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
 &lt;/style&gt;
+
 </tw-passagedata><tw-passagedata pid="5" name="Climate change correct" tags="" position="750,1150" size="100,100">&lt;&lt;set $fullpath += &quot; → Climate change Correct&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 10px;&quot;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
-  &lt;!-- Story Text --&gt;
-  &lt;p style=&quot;font-size: 1.2em; line-height: 1.5; margin-bottom: 15px;&quot;&gt;
+  &lt;!-- Story Text with tighter margin --&gt;
+  &lt;p style=&quot;font-size: 1.2em; line-height: 1.5; margin-bottom: 10px;&quot;&gt;
     Well done!&lt;br&gt;
     Before you continue, you open your backpack.
   &lt;/p&gt;
 
-  &lt;!-- Image appears before the link --&gt;
-  &lt;img src=&quot;Medal.png&quot; alt=&quot;Medal&quot; width=&quot;500&quot; style=&quot;margin: 10px auto 15px; display: block;&quot;&gt;
+  &lt;!-- Enlarged Image with condensed margin --&gt;
+  &lt;img src=&quot;Medal.png&quot; alt=&quot;Medal&quot; width=&quot;1000&quot; style=&quot;margin: 8px auto 10px; display: block;&quot;&gt;
 
-  &lt;!-- Backpack Link --&gt;
-  &lt;div style=&quot;margin-top: 10px;&quot;&gt;
+  &lt;!-- Backpack Link with reduced margin --&gt;
+  &lt;div style=&quot;margin-top: 8px;&quot;&gt;
     [[Open your backpack to discover more.|Climate change Extended Answer]]
   &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;!-- Reusable Styling --&gt;
 &lt;style&gt;
 .glow-button {
   background-color: #b266ff;
@@ -482,47 +474,45 @@ $(document).on(':passagedisplay', function () {
   box-shadow: 0 0 5px rgba(178, 102, 255, 0.4);
   transition: box-shadow 0.3s ease;
 }
-
 .glow-button:hover {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
 &lt;/style&gt;
 </tw-passagedata><tw-passagedata pid="6" name="Climate change Extended Answer" tags="" position="575,1225" size="100,100">&lt;div style=&quot;max-width: 800px; margin: 0 auto; padding: 5px; text-align: center;&quot;&gt;
 
-  &lt;!-- Image centered --&gt;
-  &lt;img src=&quot;Bookimage.png&quot; alt=&quot;Book image&quot; width=&quot;500&quot; style=&quot;margin: 5px auto; display: block;&quot;&gt;
+  &lt;!-- Enlarged Image centered --&gt;
+  &lt;img src=&quot;Bookimage.png&quot; alt=&quot;Book image&quot; style=&quot;width: 100%; max-width: 1000px; margin: 4px auto 8px; display: block;&quot;&gt;
 
-  &lt;!-- Audio and button centered --&gt;
-  &lt;div style=&quot;margin: 10px 0;&quot;&gt;
+  &lt;!-- Audio and button with tighter margin --&gt;
+  &lt;div style=&quot;margin: 8px 0;&quot;&gt;
     &lt;audio id=&quot;FF-extended&quot; src=&quot;Unicorn_explanation_question_3.mp3&quot; style=&quot;display:none;&quot;&gt;&lt;/audio&gt;
-    &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;FF-extended&#39;).play()&quot;&gt;
+    &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;FF-extended&#39;).play()&quot; style=&quot;margin-bottom: 6px;&quot;&gt;
       ▶️ Play Message
     &lt;/button&gt;
   &lt;/div&gt;
 
-  &lt;!-- Question prompt --&gt;
-  &lt;p style=&quot;font-size: 1.05em; margin: 10px auto;&quot;&gt;
+  &lt;!-- Question prompt with reduced margin --&gt;
+  &lt;p style=&quot;font-size: 1.05em; margin: 8px auto;&quot;&gt;
     Why do unicorns with thick fur survive better in the cold? How does this change the population over time?
   &lt;/p&gt;
 
-  &lt;!-- Input + Submit stacked vertically --&gt;
-  &lt;div style=&quot;margin: 10px auto;&quot;&gt;
+  &lt;!-- Input + Submit stacked with less margin --&gt;
+  &lt;div style=&quot;margin: 8px auto;&quot;&gt;
     &lt;input id=&quot;answer&quot; type=&quot;text&quot; placeholder=&quot;Type your answer here&quot;
-           style=&quot;padding: 6px 10px; font-size: 1em; width: 60%; max-width: 400px; text-align: center; margin-bottom: 10px;&quot;&gt;
+           style=&quot;padding: 6px 10px; font-size: 1em; width: 60%; max-width: 400px; text-align: center; margin-bottom: 8px;&quot;&gt;
     &lt;br&gt;
     &lt;button id=&quot;submitBtn&quot; class=&quot;glow-button&quot;&gt;Submit&lt;/button&gt;
   &lt;/div&gt;
 
   &lt;!-- Feedback message --&gt;
-  &lt;div id=&quot;feedback&quot; style=&quot;margin-top: 10px; font-weight: bold; color: green;&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;feedback&quot; style=&quot;margin-top: 8px; font-weight: bold; color: green;&quot;&gt;&lt;/div&gt;
 
-  &lt;!-- Next passage link (initially hidden) --&gt;
-  &lt;div id=&quot;nextLink&quot; style=&quot;margin-top: 14px; display: none;&quot;&gt;
+  &lt;!-- Next passage link --&gt;
+  &lt;div id=&quot;nextLink&quot; style=&quot;margin-top: 10px; display: none;&quot;&gt;
     [[Follow the path.|Chapter 4 Natural Selection]]
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;!-- Button styles --&gt;
 &lt;style&gt;
 .glow-button {
   background-color: #b266ff;
@@ -540,7 +530,6 @@ $(document).on(':passagedisplay', function () {
 }
 &lt;/style&gt;
 
-&lt;!-- Safe script --&gt;
 &lt;&lt;script&gt;&gt;
 window.setTimeout(function() {
   const submitBtn = document.getElementById(&quot;submitBtn&quot;);
@@ -565,37 +554,37 @@ window.setTimeout(function() {
   };
 }, 100);
 &lt;&lt;/script&gt;&gt;
+
 </tw-passagedata><tw-passagedata pid="7" name="Climate change incorrect" tags="" position="1150,1175" size="100,100">&lt;&lt;set $fullpath += &quot; → Climate change incorrect&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 8px;&quot;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
-  &lt;!-- Condensed Paragraph with reduced margin --&gt;
-  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 10px;&quot;&gt;
+  &lt;!-- Condensed Paragraph --&gt;
+  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 8px;&quot;&gt;
     Wait, before you make the final decision, one of your unicorn friends steps forward and shakes her head.&lt;br&gt;
     “I’m not so sure about that choice. Let’s think about this again.”&lt;br&gt;
     You listen to her advice and decide to choose again.
   &lt;/p&gt;
 
-  &lt;!-- Image with reduced margin and condensed box-shadow --&gt;
+  &lt;!-- Enlarged Image --&gt;
   &lt;img src=&quot;Unicornfriend.png&quot; alt=&quot;Unicorn friend&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 5px auto 10px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; margin: 4px auto 8px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
 
   &lt;!-- Audio element --&gt;
   &lt;audio id=&quot;partial-correct-audio&quot; src=&quot;Unicorn_incorrect_loop.mp3&quot;&gt;&lt;/audio&gt;
 
-  &lt;!-- Play audio button with reduced margin --&gt;
-  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 5px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
+  &lt;!-- Play audio button --&gt;
+  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 4px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
     ▶️ Play Message
   &lt;/button&gt;
 
-  &lt;!-- Try again link with reduced top margin --&gt;
-  &lt;div style=&quot;margin-top: 5px;&quot;&gt;
+  &lt;!-- Try again link --&gt;
+  &lt;div style=&quot;margin-top: 4px;&quot;&gt;
     [[🔁 Try the question again.|Chapter 3 Climate Change]]
   &lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;!-- Reusable Styling --&gt;
 &lt;style&gt;
 .glow-button {
   background-color: #b266ff;
@@ -608,178 +597,167 @@ window.setTimeout(function() {
   box-shadow: 0 0 5px rgba(178, 102, 255, 0.4);
   transition: box-shadow 0.3s ease;
 }
-
 .glow-button:hover {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="8" name="Climate change Partial Correct" tags="" position="1100,1300" size="100,100">&lt;&lt;set $fullpath += &quot; → Climate change partial correct&quot;&gt;&gt;
-
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 8px;&quot;&gt;
-
-  &lt;!-- Condensed Paragraph with reduced margin --&gt;
-  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 10px;&quot;&gt;
-    Wait, before you make the final decision, one of your unicorn friends steps forward and shakes her head.&lt;br&gt;
-    “I’m not so sure about that choice. Let’s think about this again.”&lt;br&gt;
-    You listen to her advice and decide to choose again.
-  &lt;/p&gt;
-
-  &lt;!-- Image with reduced margin and condensed box-shadow --&gt;
-  &lt;img src=&quot;Unicornfriend.png&quot; alt=&quot;Unicorn friend&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 5px auto 10px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
-
-  &lt;!-- Audio element --&gt;
-  &lt;audio id=&quot;partial-correct-audio&quot; src=&quot;Unicorn_incorrect_loop.mp3&quot;&gt;&lt;/audio&gt;
-
-  &lt;!-- Play audio button with reduced margin --&gt;
-  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 5px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
-    ▶️ Play Message
-  &lt;/button&gt;
-
-  &lt;!-- Try again link with reduced top margin --&gt;
-  &lt;div style=&quot;margin-top: 5px;&quot;&gt;
-    [[🔁 Try the question again.|Chapter 3 Climate Change]]
-  &lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;!-- Reusable Styling --&gt;
-&lt;style&gt;
-.glow-button {
-  background-color: #b266ff;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  font-size: 1em;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(178, 102, 255, 0.4);
-  transition: box-shadow 0.3s ease;
-}
-
-.glow-button:hover {
-  box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
-}
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="9" name="Chapter 1 Changing resources" tags="" position="725,475" size="100,100">&lt;div style=&quot;text-align: center; margin-bottom: 5px;&quot;&gt;
-  &lt;span style=&quot;font-weight: bold; font-size: 1.2em; display: block; margin-bottom: 5px;&quot;&gt;
-    Chapter 1 Changing resources
-  &lt;/span&gt;
-  &lt;audio id=&quot;Unicorn1_Changing_Resources&quot; src=&quot;Unicorn1_Changing_Resources.mp3&quot;&gt;&lt;/audio&gt;
-  &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Unicorn1_Changing_Resources&#39;).play()&quot;&gt;🔊&lt;/button&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;text-align: center; margin: 10px 0;&quot;&gt;
-  &lt;img src=&quot;Desertbackground.png&quot; alt=&quot;Desertbackground&quot;
-       style=&quot;width: 80%; max-width: 500px; display: block; margin: 0 auto;&quot;&gt;
-&lt;/div&gt;
-
-&lt;p style=&quot;font-size: 1.2em; font-weight: bold; max-width: 90%; margin: 10px auto; line-height: 1.3; color: #7a4fa3;&quot;&gt;
-  &quot;What is likely to happen to the Unicorn population over many generations?&quot;
-&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center; margin-bottom: 5px;&quot;&gt;
-  &lt;span style=&quot;font-weight: bold; font-size: 1.2em; display: block; margin-bottom: 5px;&quot;&gt;
-    Read questions and answers
-  &lt;/span&gt;
-  &lt;audio id=&quot;Unicorn_question_11&quot; src=&quot;Unicorn_question_1.mp3&quot;&gt;&lt;/audio&gt;
-  &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Unicorn_question_11&#39;).play()&quot;&gt;🎧&lt;/button&gt;
-&lt;/div&gt;
-
-&lt;!-- Answer Choices --&gt;
-🦄[[The number of unicorns with narrow and broad muzzles will stay the same because all unicorns will face the same drought conditions.|Changing resources Incorrect]]
-
-🦄[[Unicorns will eat thorny bushes, and over time, their muzzles will become tougher and broader as they use them more. This feature will be passed to their offspring.|Changing resources Partial Correct]]
-
-🦄[[Unicorns with broader muzzles will survive better because they can eat thorny bushes without injury. Over generations, the herd will change, with broad-muzzled unicorns becoming more common.|Changing resources Correct]]
-
-&lt;style&gt;
-  .glow-button {
-    background-color: #b266ff;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    font-size: 0.9em;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 6px rgba(178, 102, 255, 0.4);
-    transition: box-shadow 0.3s ease;
-    margin: 8px auto; /* center with auto left/right */
-    display: block;   /* make button block for margin auto centering */
-    max-width: 100px; /* optional: limit width for neatness */
-  }
-
-  .glow-button:hover {
-    box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
-  }
-
-  /* Change default Twine choice link colors to lighter purple */
-  a.link-internal {
-    color: #b19cd9 !important; /* lighter purple */
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.1em;
-  }
-
-  a.link-internal:hover {
-    color: #d4c9ff !important; /* even lighter on hover */
-    text-decoration: underline;
-  }
 &lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Climate change Partial Correct" tags="" position="1100,1300" size="100,100">&lt;&lt;set $fullpath += &quot; → Climate change partial correct&quot;&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="10" name="Natural selection Correct" tags="" position="975,1400" size="100,100">&lt;&lt;set $fullpath += &quot; → Natural selection Correct&quot;&gt;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 700px; margin: 0 auto; padding: 8px; font-family: &#39;Segoe UI&#39;, sans-serif;&quot;&gt;
+  &lt;!-- Condensed Paragraph --&gt;
+  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 8px;&quot;&gt;
+    Wait, before you make the final decision, one of your unicorn friends steps forward and shakes her head.&lt;br&gt;
+    “I’m not so sure about that choice. Let’s think about this again.”&lt;br&gt;
+    You listen to her advice and decide to choose again.
+  &lt;/p&gt;
 
-  &lt;!-- Scenic image --&gt;
+  &lt;!-- Enlarged Image --&gt;
+  &lt;img src=&quot;Unicornfriend.png&quot; alt=&quot;Unicorn friend&quot;
+       style=&quot;width: 100%; max-width: 1000px; margin: 4px auto 8px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
+
+  &lt;!-- Audio --&gt;
+  &lt;audio id=&quot;partial-correct-audio&quot; src=&quot;Unicorn_incorrect_loop.mp3&quot;&gt;&lt;/audio&gt;
+
+  &lt;!-- Play Audio Button --&gt;
+  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 4px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
+    ▶️ Play Message
+  &lt;/button&gt;
+
+  &lt;!-- Try Again Link --&gt;
+  &lt;div style=&quot;margin-top: 4px;&quot;&gt;
+    [[🔁 Try the question again.|Chapter 3 Climate Change]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+.glow-button {
+  background-color: #b266ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(178, 102, 255, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+.glow-button:hover {
+  box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
+}
+&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="9" name="Chapter 1 Changing resources" tags="" position="725,475" size="100,100">&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 4px;&quot;&gt;
+
+  &lt;!-- Chapter Title --&gt;
+  &lt;div style=&quot;margin-bottom: 4px;&quot;&gt;
+    &lt;span style=&quot;font-weight: bold; font-size: 1.4em;&quot;&gt;Chapter 1: Changing resources&lt;/span&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Audio Button for Chapter --&gt;
+  &lt;div style=&quot;margin-bottom: 8px;&quot;&gt;
+    &lt;audio id=&quot;Unicorn1_Changing_Resources&quot; src=&quot;Unicorn1_Changing_Resources.mp3&quot; style=&quot;display: none;&quot;&gt;&lt;/audio&gt;
+    &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Unicorn1_Changing_Resources&#39;).play()&quot;&gt;🔊&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Enlarged Image --&gt;
+  &lt;div style=&quot;margin-bottom: 6px;&quot;&gt;
+    &lt;img src=&quot;Desertbackground.png&quot; alt=&quot;Desertbackground&quot;
+         style=&quot;width: 80%; max-width: 1000px; display: block; margin: 0 auto;&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Question --&gt;
+  &lt;p style=&quot;font-size: 1.2em; font-weight: bold; line-height: 1.4; color: #7a4fa3; margin: 10px 0;&quot;&gt;
+    &quot;What is likely to happen to the Unicorn population over many generations?&quot;
+  &lt;/p&gt;
+
+  &lt;!-- Audio for Q&amp;A --&gt;
+  &lt;div style=&quot;margin-bottom: 8px;&quot;&gt;
+    &lt;div style=&quot;font-weight: bold; font-size: 1.1em; margin-bottom: 3px;&quot;&gt;Read questions and answers&lt;/div&gt;
+    &lt;audio id=&quot;Unicorn_question_11&quot; src=&quot;Unicorn_question_1.mp3&quot; style=&quot;display: none;&quot;&gt;&lt;/audio&gt;
+    &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Unicorn_question_11&#39;).play()&quot;&gt;🎧&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Answer Choices --&gt;
+  &lt;div style=&quot;text-align: center; font-size: 1em; line-height: 1.6; margin-top: 8px; color: #4a3a6e;&quot;&gt;
+    🦄[[The number of unicorns with narrow and broad muzzles will stay the same because all unicorns will face the same drought conditions.|Changing resources Incorrect]]&lt;br&gt;&lt;br&gt;
+    🦄[[Unicorns will eat thorny bushes, and over time, their muzzles will become tougher and broader as they use them more. This feature will be passed to their offspring.|Changing resources Partial Correct]]&lt;br&gt;&lt;br&gt; 
+    🦄[[Unicorns with broader muzzles will survive better because they can eat thorny bushes without injury. Over generations, the herd will change, with broad-muzzled unicorns becoming more common.|Changing resources Correct]]
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+.glow-button {
+  background-color: #b266ff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(178, 102, 255, 0.5);
+  transition: box-shadow 0.3s ease;
+  margin: 6px auto;
+  display: inline-block;
+}
+.glow-button:hover {
+  box-shadow: 0 0 8px rgba(178, 102, 255, 0.8);
+}
+&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="10" name="Natural selection Correct" tags="" position="975,1400" size="100,100">&lt;div style=&quot;text-align: center; max-width: 700px; margin: 0 auto; padding: 2px; font-family: &#39;Segoe UI&#39;, sans-serif;&quot;&gt;
+
+  &lt;!-- Scenic image enlarged with minimal margin --&gt;
   &lt;img src=&quot;Elder.png&quot; alt=&quot;Elder&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 8px auto; display: block; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; margin: 2px auto 4px; display: block; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);&quot;&gt;
 
-  &lt;!-- Narrative --&gt;
-  &lt;p style=&quot;font-size: 1.2em; line-height: 1.4; margin: 8px 0;&quot;&gt;
+  &lt;!-- Narrative with minimal margin --&gt;
+  &lt;p style=&quot;font-size: 1.2em; line-height: 1.3; margin: 2px 0;&quot;&gt;
     The valley is filled with a beautiful golden glow so bright you are forced to shield your eyes.
   &lt;/p&gt;
 
-  &lt;!-- Audio playback button --&gt;
+  &lt;!-- Audio playback button with minimal margin --&gt;
   &lt;audio id=&quot;final-audio&quot; src=&quot;Unicorns_conclusion.mp3&quot;&gt;&lt;/audio&gt;
   &lt;button onclick=&quot;document.getElementById(&#39;final-audio&#39;).play()&quot;
-          style=&quot;background-color: #8e44ad; color: white; border: none; padding: 8px 18px; font-size: 1em; border-radius: 8px; cursor: pointer; box-shadow: 0 0 8px #8e44ad; transition: 0.3s; margin: 8px 0;&quot;&gt;
+          style=&quot;background-color: #8e44ad; color: white; border: none; padding: 6px 14px; font-size: 1em; border-radius: 8px; cursor: pointer; box-shadow: 0 0 8px #8e44ad; transition: 0.3s; margin: 2px 0;&quot;&gt;
     ▶️ Play Message
   &lt;/button&gt;
 
-  &lt;!-- Results include --&gt;
-  &lt;div style=&quot;margin-top: 12px;&quot;&gt;
+  &lt;!-- Results include with minimal margin --&gt;
+  &lt;div style=&quot;margin-top: 2px;&quot;&gt;
     &lt;&lt;include &quot;Submit Results&quot;&gt;&gt;
   &lt;/div&gt;
 
-  &lt;!-- Ending image --&gt;
+  &lt;!-- Ending image enlarged with minimal margin --&gt;
   &lt;img src=&quot;Stone_Tablet.png&quot; alt=&quot;Tablet&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 8px auto 0; display: block; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; margin: 2px auto 0; display: block; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);&quot;&gt;
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="11" name="Natural selection incorrect" tags="" position="850,1400" size="100,100">
-&lt;&lt;set $fullpath += &quot; → Natural selection incorrect&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 8px;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Natural selection incorrect" tags="" position="850,1400" size="100,100">&lt;&lt;set $fullpath += &quot; → Natural selection incorrect&quot;&gt;&gt;
+
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
   &lt;!-- Condensed Paragraph with reduced margin --&gt;
-  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 10px;&quot;&gt;
+  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 8px;&quot;&gt;
     Wait, before you make the final decision, one of your unicorn friends steps forward and shakes her head.&lt;br&gt;
     “I’m not so sure about that choice. Let’s think about this again.”&lt;br&gt;
     You listen to her advice and decide to choose again.
   &lt;/p&gt;
 
-  &lt;!-- Image with reduced margin and condensed box-shadow --&gt;
+  &lt;!-- Image enlarged and with reduced margin --&gt;
   &lt;img src=&quot;Unicornfriend.png&quot; alt=&quot;Unicorn friend&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 5px auto 10px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; margin: 4px auto 8px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
 
   &lt;!-- Audio element --&gt;
   &lt;audio id=&quot;partial-correct-audio&quot; src=&quot;Unicorn_incorrect_loop.mp3&quot;&gt;&lt;/audio&gt;
 
-  &lt;!-- Play audio button with reduced margin --&gt;
-  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 5px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
+  &lt;!-- Play audio button with tighter margin --&gt;
+  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 4px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
     ▶️ Play Message
   &lt;/button&gt;
 
   &lt;!-- Try again link with reduced top margin --&gt;
-  &lt;div style=&quot;margin-top: 5px;&quot;&gt;
+  &lt;div style=&quot;margin-top: 4px;&quot;&gt;
     [[🔁 Try the question again.|Chapter 4 Natural Selection]]
   &lt;/div&gt;
 
@@ -802,31 +780,32 @@ window.setTimeout(function() {
 .glow-button:hover {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="12" name="Natural selection Partial Correct" tags="" position="1125,1450" size="100,100">&lt;&lt;set $fullpath += &quot; → Natural selection partial correct&quot;&gt;&gt;
+&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="12" name="Natural selection Partial Correct" tags="" position="1125,1450" size="100,100">&lt;&lt;set $fullpath += &quot; → Natural selection partial correct&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 8px;&quot;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
   &lt;!-- Condensed Paragraph with reduced margin --&gt;
-  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 10px;&quot;&gt;
+  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 6px;&quot;&gt;
     Wait, before you make the final decision, one of your unicorn friends steps forward and shakes her head.&lt;br&gt;
     “I’m not so sure about that choice. Let’s think about this again.”&lt;br&gt;
     You listen to her advice and decide to choose again.
   &lt;/p&gt;
 
-  &lt;!-- Image with reduced margin and condensed box-shadow --&gt;
+  &lt;!-- Image enlarged and with reduced margin --&gt;
   &lt;img src=&quot;Unicornfriend.png&quot; alt=&quot;Unicorn friend&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 5px auto 10px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; margin: 2px auto 6px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
 
   &lt;!-- Audio element --&gt;
   &lt;audio id=&quot;partial-correct-audio&quot; src=&quot;Unicorn_incorrect_loop.mp3&quot;&gt;&lt;/audio&gt;
 
-  &lt;!-- Play audio button with reduced margin --&gt;
-  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 5px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
+  &lt;!-- Play audio button with tighter margin --&gt;
+  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 2px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
     ▶️ Play Message
   &lt;/button&gt;
 
   &lt;!-- Try again link with reduced top margin --&gt;
-  &lt;div style=&quot;margin-top: 5px;&quot;&gt;
+  &lt;div style=&quot;margin-top: 2px;&quot;&gt;
     [[🔁 Try the question again.|Chapter 4 Natural Selection]]
   &lt;/div&gt;
 
@@ -849,37 +828,38 @@ window.setTimeout(function() {
 .glow-button:hover {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="13" name="Chapter 4 Natural Selection" tags="" position="900,1275" size="100,100">&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 10px;&quot;&gt;
+&lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="13" name="Chapter 4 Natural Selection" tags="" position="900,1275" size="100,100">&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
   &lt;!-- Title and Audio --&gt;
-  &lt;div style=&quot;margin-bottom: 12px;&quot;&gt;
+  &lt;div style=&quot;margin-bottom: 8px;&quot;&gt;
     &lt;div style=&quot;font-weight: bold; font-size: 1.2em;&quot;&gt;Chapter 4: Natural Selection&lt;/div&gt;
-    &lt;div style=&quot;margin-top: 5px; text-align: center;&quot;&gt;
+    &lt;div style=&quot;margin-top: 4px; text-align: center;&quot;&gt;
       &lt;audio id=&quot;Unicorn_Chapter4&quot; src=&quot;Unicorn_chapter_4_Natural selection.mp3&quot; style=&quot;display: none;&quot;&gt;&lt;/audio&gt;
       &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Unicorn_Chapter4&#39;).play()&quot;&gt;🔊&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
-  &lt;!-- Image --&gt;
+  &lt;!-- Enlarged Image --&gt;
   &lt;img src=&quot;Unicornwishingtree.png&quot; alt=&quot;Wishing Tree&quot; 
-       style=&quot;width: 80%; max-width: 500px; margin: 10px auto 15px; display: block;&quot;&gt;
+       style=&quot;width: 80%; max-width: 1000px; margin: 6px auto 10px; display: block;&quot;&gt;
 
   &lt;!-- Question --&gt;
-  &lt;p style=&quot;font-size: 1.3em; font-weight: bold; line-height: 1.4; color: #7a4fa3; margin: 10px auto;&quot;&gt;
+  &lt;p style=&quot;font-size: 1.3em; font-weight: bold; line-height: 1.4; color: #7a4fa3; margin: 6px auto;&quot;&gt;
     &quot;Who evolves over time—the individual unicorns or the population?&quot;
   &lt;/p&gt;
 
   &lt;!-- Read Aloud --&gt;
-  &lt;div style=&quot;margin-bottom: 12px;&quot;&gt;
+  &lt;div style=&quot;margin-bottom: 8px;&quot;&gt;
     &lt;div style=&quot;font-weight: bold; font-size: 1.1em;&quot;&gt;Read questions and answers&lt;/div&gt;
-    &lt;div style=&quot;margin-top: 5px; text-align: center;&quot;&gt;
+    &lt;div style=&quot;margin-top: 4px; text-align: center;&quot;&gt;
       &lt;audio id=&quot;Unicorn_question_4&quot; src=&quot;Unicorn_question_4.mp3&quot; style=&quot;display: none;&quot;&gt;&lt;/audio&gt;
       &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Unicorn_question_4&#39;).play()&quot;&gt;🎧&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
   &lt;!-- Answer Choices --&gt;
-  &lt;div style=&quot;text-align: left; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 10px auto 0;&quot;&gt;
+  &lt;div style=&quot;text-align: left; font-size: 1em; line-height: 1.6; max-width: 600px; margin: 6px auto 0;&quot;&gt;
     🦄 [[Individual unicorns change their features during their lifetime to better fit the environment, and these changes are passed onto their offspring.|Natural selection Partial Correct]]&lt;br&gt;&lt;br&gt;
     🦄 [[Neither the population nor the individuals evolve; features stay the same no matter what happens in the environment.|Natural selection incorrect]]&lt;br&gt;&lt;br&gt;
     🦄 [[The population evolves over many generations as unicorns with features that make survival and reproduction more likely will become more common.|Natural selection Correct]]
@@ -887,7 +867,6 @@ window.setTimeout(function() {
 
 &lt;/div&gt;
 
-&lt;!-- Consistent Purple Glow Button Styling --&gt;
 &lt;style&gt;
 .glow-button {
   background-color: #b266ff;
@@ -899,8 +878,8 @@ window.setTimeout(function() {
   cursor: pointer;
   box-shadow: 0 0 5px rgba(178, 102, 255, 0.4);
   transition: box-shadow 0.3s ease;
-  margin: 5px auto; /* center margin */
-  display: inline-block; /* keep buttons inline */
+  margin: 5px auto;
+  display: inline-block;
 }
 .glow-button:hover {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
@@ -908,19 +887,19 @@ window.setTimeout(function() {
 &lt;/style&gt;
 </tw-passagedata><tw-passagedata pid="14" name="Changing resources Correct" tags="" position="900,650" size="100,100">&lt;&lt;set $fullpath += &quot; → Changing resources Correct&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 10px;&quot;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
-  &lt;!-- Story Text --&gt;
-  &lt;p style=&quot;font-size: 1.2em; line-height: 1.5; margin-bottom: 15px;&quot;&gt;
+  &lt;!-- Condensed Story Text --&gt;
+  &lt;p style=&quot;font-size: 1.2em; line-height: 1.4; margin-bottom: 10px;&quot;&gt;
     Well done! The engraving you have chosen glows as if indicating the correct path.&lt;br&gt;
     Before you continue, you open your backpack.
   &lt;/p&gt;
 
-  &lt;!-- Image appears before the link --&gt;
-  &lt;img src=&quot;Medal.png&quot; alt=&quot;Medal&quot; width=&quot;500&quot; style=&quot;margin: 10px auto 15px; display: block;&quot;&gt;
+  &lt;!-- Enlarged Image --&gt;
+  &lt;img src=&quot;Medal.png&quot; alt=&quot;Medal&quot; style=&quot;width: 100%; max-width: 1000px; margin: 4px auto 10px; display: block;&quot;&gt;
 
   &lt;!-- Backpack Link --&gt;
-  &lt;div style=&quot;margin-top: 10px;&quot;&gt;
+  &lt;div style=&quot;margin-top: 4px;&quot;&gt;
     [[Open your backpack to discover more.|Changing Resources Extended Answer]]
   &lt;/div&gt;
 
@@ -944,39 +923,38 @@ window.setTimeout(function() {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
 &lt;/style&gt;
+</tw-passagedata><tw-passagedata pid="15" name="Changing Resources Extended Answer" tags="" position="1075,725" size="100,100">&lt;div style=&quot;max-width: 800px; margin: 0 auto; padding: 2px 6px; text-align: center;&quot;&gt;
 
-</tw-passagedata><tw-passagedata pid="15" name="Changing Resources Extended Answer" tags="" position="1075,725" size="100,100">&lt;div style=&quot;max-width: 800px; margin: 0 auto; padding: 5px; text-align: center;&quot;&gt;
-
-  &lt;!-- Image --&gt;
-  &lt;img src=&quot;Bookimage.png&quot; alt=&quot;Book image&quot; width=&quot;500&quot; style=&quot;margin: 5px auto; display: block;&quot;&gt;
+  &lt;!-- Enlarged Image --&gt;
+  &lt;img src=&quot;Bookimage.png&quot; alt=&quot;Book image&quot; style=&quot;width: 100%; max-width: 1000px; margin: 2px auto 6px; display: block;&quot;&gt;
 
   &lt;!-- Audio --&gt;
-  &lt;div style=&quot;margin: 10px 0;&quot;&gt;
+  &lt;div style=&quot;margin: 4px 0;&quot;&gt;
     &lt;audio id=&quot;FT-extended&quot; src=&quot;Unicorn_explanation_question1.mp3&quot;&gt;&lt;/audio&gt;
-    &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;FT-extended&#39;).play()&quot;&gt;
+    &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;FT-extended&#39;).play()&quot; style=&quot;margin: 0 auto;&quot;&gt;
       ▶️ Play Message
     &lt;/button&gt;
   &lt;/div&gt;
 
   &lt;!-- Question Prompt --&gt;
-  &lt;p style=&quot;font-size: 1.05em; margin: 10px auto;&quot;&gt;
-    Why do unicorns with broad muzzles survive better during the drought?
-Why would this feature become more common over time?
+  &lt;p style=&quot;font-size: 1.05em; margin: 6px auto 6px;&quot;&gt;
+    Why do unicorns with broad muzzles survive better during the drought?&lt;br&gt;
+    Why would this feature become more common over time?
   &lt;/p&gt;
 
-  &lt;!-- Input above the button --&gt;
-  &lt;div style=&quot;margin: 10px auto;&quot;&gt;
+  &lt;!-- Input and Submit --&gt;
+  &lt;div style=&quot;margin: 6px auto;&quot;&gt;
     &lt;input id=&quot;answer1&quot; type=&quot;text&quot; placeholder=&quot;Type your answer here&quot;
-           style=&quot;padding: 6px 10px; font-size: 1em; width: 60%; max-width: 400px; text-align: center; margin-bottom: 8px;&quot;&gt;
+           style=&quot;padding: 5px 8px; font-size: 1em; width: 60%; max-width: 400px; text-align: center; margin-bottom: 4px;&quot;&gt;
     &lt;br&gt;
-    &lt;button class=&quot;glow-button&quot; id=&quot;submitBtn1&quot;&gt;Submit&lt;/button&gt;
+    &lt;button class=&quot;glow-button&quot; id=&quot;submitBtn1&quot; style=&quot;margin: 0 auto;&quot;&gt;Submit&lt;/button&gt;
   &lt;/div&gt;
 
   &lt;!-- Feedback --&gt;
-  &lt;div id=&quot;feedback1&quot; style=&quot;margin-top: 10px; font-weight: bold; color: green;&quot;&gt;&lt;/div&gt;
+  &lt;div id=&quot;feedback1&quot; style=&quot;margin-top: 6px; font-weight: bold; color: green;&quot;&gt;&lt;/div&gt;
 
-  &lt;!-- Next passage link, hidden at first --&gt;
-  &lt;div id=&quot;nextLink1&quot; style=&quot;margin-top: 14px; display: none;&quot;&gt;
+  &lt;!-- Next Link (Initially Hidden) --&gt;
+  &lt;div id=&quot;nextLink1&quot; style=&quot;margin-top: 8px; display: none;&quot;&gt;
     [[Continue onward.|Chapter 2 A new predator]]
   &lt;/div&gt;
 &lt;/div&gt;
@@ -993,13 +971,13 @@ Why would this feature become more common over time?
   cursor: pointer;
   box-shadow: 0 0 4px rgba(178, 102, 255, 0.5);
   transition: box-shadow 0.3s ease;
+  display: inline-block;
 }
 .glow-button:hover {
   box-shadow: 0 0 8px rgba(178, 102, 255, 0.8);
 }
 &lt;/style&gt;
 
-&lt;!-- SugarCube-safe script --&gt;
 &lt;&lt;script&gt;&gt;
 postdisplay[&quot;setupFreeText1&quot;] = function () {
     const btn = document.getElementById(&quot;submitBtn1&quot;);
@@ -1020,29 +998,29 @@ postdisplay[&quot;setupFreeText1&quot;] = function () {
 &lt;&lt;/script&gt;&gt;
 </tw-passagedata><tw-passagedata pid="16" name="Changing resources Incorrect" tags="" position="775,650" size="100,100">&lt;&lt;set $fullpath += &quot; → changing resources Incorrect&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 8px;&quot;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
-  &lt;!-- Condensed Paragraph with reduced margin --&gt;
-  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 10px;&quot;&gt;
+  &lt;!-- Condensed Paragraph --&gt;
+  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 8px;&quot;&gt;
     Wait, before you make the final decision, one of your unicorn friends steps forward and shakes her head.&lt;br&gt;
     “I’m not so sure about that choice. Let’s think about this again.”&lt;br&gt;
     You listen to her advice and decide to choose again.
   &lt;/p&gt;
 
-  &lt;!-- Image with reduced margin and condensed box-shadow --&gt;
+  &lt;!-- Enlarged Image --&gt;
   &lt;img src=&quot;Unicornfriend.png&quot; alt=&quot;Unicorn friend&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 5px auto 10px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; margin: 4px auto 8px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
 
   &lt;!-- Audio element --&gt;
   &lt;audio id=&quot;partial-correct-audio&quot; src=&quot;Unicorn_incorrect_loop.mp3&quot;&gt;&lt;/audio&gt;
 
-  &lt;!-- Play audio button with reduced margin --&gt;
-  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 5px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
+  &lt;!-- Play audio button --&gt;
+  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 4px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
     ▶️ Play Message
   &lt;/button&gt;
 
-  &lt;!-- Try again link with reduced top margin --&gt;
-  &lt;div style=&quot;margin-top: 5px;&quot;&gt;
+  &lt;!-- Try again link --&gt;
+  &lt;div style=&quot;margin-top: 4px;&quot;&gt;
     [[🔁 Try the question again.|Chapter 1 Changing resources]]
   &lt;/div&gt;
 
@@ -1068,29 +1046,29 @@ postdisplay[&quot;setupFreeText1&quot;] = function () {
 &lt;/style&gt;
 </tw-passagedata><tw-passagedata pid="17" name="Changing resources Partial Correct" tags="" position="600,625" size="100,100">&lt;&lt;set $fullpath += &quot; → changing resources Partial Correct&quot;&gt;&gt;
 
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 8px;&quot;&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 6px;&quot;&gt;
 
-  &lt;!-- Condensed Paragraph with reduced margin --&gt;
-  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 10px;&quot;&gt;
+  &lt;!-- Condensed Paragraph --&gt;
+  &lt;p style=&quot;font-size: 1.1em; line-height: 1.3; margin-bottom: 8px;&quot;&gt;
     Wait, before you make the final decision, one of your unicorn friends steps forward and shakes her head.&lt;br&gt;
     “I’m not so sure about that choice. Let’s think about this again.”&lt;br&gt;
     You listen to her advice and decide to choose again.
   &lt;/p&gt;
 
-  &lt;!-- Image with reduced margin and condensed box-shadow --&gt;
+  &lt;!-- Enlarged Image --&gt;
   &lt;img src=&quot;Unicornfriend.png&quot; alt=&quot;Unicorn friend&quot;
-       style=&quot;width: 100%; max-width: 500px; margin: 5px auto 10px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
+       style=&quot;width: 100%; max-width: 1000px; margin: 4px auto 8px; display: block; box-shadow: 0 0 10px rgba(178, 102, 255, 0.3); border-radius: 10px;&quot;&gt;
 
   &lt;!-- Audio element --&gt;
   &lt;audio id=&quot;partial-correct-audio&quot; src=&quot;Unicorn_incorrect_loop.mp3&quot;&gt;&lt;/audio&gt;
 
-  &lt;!-- Play audio button with reduced margin --&gt;
-  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 5px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
+  &lt;!-- Play audio button --&gt;
+  &lt;button class=&quot;glow-button&quot; style=&quot;margin-bottom: 4px;&quot; onclick=&quot;document.getElementById(&#39;partial-correct-audio&#39;).play()&quot;&gt;
     ▶️ Play Message
   &lt;/button&gt;
 
-  &lt;!-- Try again link with reduced top margin --&gt;
-  &lt;div style=&quot;margin-top: 5px;&quot;&gt;
+  &lt;!-- Try again link --&gt;
+  &lt;div style=&quot;margin-top: 4px;&quot;&gt;
     [[🔁 Try the question again.|Chapter 1 Changing resources]]
   &lt;/div&gt;
 
@@ -1114,38 +1092,37 @@ postdisplay[&quot;setupFreeText1&quot;] = function () {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
 &lt;/style&gt;
-
-</tw-passagedata><tw-passagedata pid="18" name="Chapter 2 A new predator" tags="" position="800,850" size="100,100">&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 5px;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="18" name="Chapter 2 A new predator" tags="" position="800,850" size="100,100">&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 4px;&quot;&gt;
 
   &lt;!-- Chapter Title --&gt;
-  &lt;div style=&quot;margin-bottom: 5px;&quot;&gt;
+  &lt;div style=&quot;margin-bottom: 4px;&quot;&gt;
     &lt;span style=&quot;font-weight: bold; font-size: 1.4em;&quot;&gt;Chapter 2: A new predator&lt;/span&gt;
   &lt;/div&gt;
 
   &lt;!-- Audio Button for Chapter --&gt;
-  &lt;div style=&quot;margin-bottom: 10px; text-align: center;&quot;&gt;
+  &lt;div style=&quot;margin-bottom: 8px;&quot;&gt;
     &lt;audio id=&quot;Chapter2_a_new_predator&quot; src=&quot;Unicorns_chapter_2_a_new_predator.mp3&quot; style=&quot;display: none;&quot;&gt;&lt;/audio&gt;
     &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Chapter2_a_new_predator&#39;).play()&quot;&gt;🔊&lt;/button&gt;
   &lt;/div&gt;
 
-  &lt;!-- Image --&gt;
+  &lt;!-- Enlarged Image --&gt;
   &lt;img src=&quot;Forest_With_Illuminated_Branches.png&quot; alt=&quot;Forest&quot;
-       style=&quot;width: 80%; max-width: 500px; display: block; margin: 8px auto;&quot;&gt;
+       style=&quot;width: 80%; max-width: 1000px; display: block; margin: 6px auto;&quot;&gt;
 
   &lt;!-- Question --&gt;
-  &lt;p style=&quot;font-size: 1.2em; font-weight: bold; line-height: 1.4; color: #7a4fa3; margin: 12px 0;&quot;&gt;
+  &lt;p style=&quot;font-size: 1.2em; font-weight: bold; line-height: 1.4; color: #7a4fa3; margin: 10px 0;&quot;&gt;
     “What is likely to happen to the Unicorn population over many generations?”
   &lt;/p&gt;
 
   &lt;!-- Audio for Q&amp;A --&gt;
-  &lt;div style=&quot;margin-bottom: 10px; text-align: center;&quot;&gt;
-    &lt;div style=&quot;font-weight: bold; font-size: 1.1em; margin-bottom: 4px;&quot;&gt;Read questions and answers&lt;/div&gt;
+  &lt;div style=&quot;margin-bottom: 8px;&quot;&gt;
+    &lt;div style=&quot;font-weight: bold; font-size: 1.1em; margin-bottom: 3px;&quot;&gt;Read questions and answers&lt;/div&gt;
     &lt;audio id=&quot;Unicorn_question_2&quot; src=&quot;Unicorn_question_2.mp3&quot; style=&quot;display: none;&quot;&gt;&lt;/audio&gt;
     &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;Unicorn_question_2&#39;).play()&quot;&gt;🎧&lt;/button&gt;
   &lt;/div&gt;
 
   &lt;!-- Answer Choices --&gt;
-  &lt;div style=&quot;text-align: center; font-size: 1em; line-height: 1.6; margin-top: 10px;&quot;&gt;
+  &lt;div style=&quot;text-align: center; font-size: 1em; line-height: 1.6; margin-top: 8px;&quot;&gt;
     🦄[[Unicorns with dull, dark fur will become more common because they are harder for griffins to see, making them more likely to survive and have offspring.|A new predator Correct]]&lt;br&gt;&lt;br&gt;
     🦄[[Unicorns that run faster will have a better chance of escaping predators, so they may be more likely to survive. However, fur colour is unlikely to change.|A new predator partial correct]]&lt;br&gt;&lt;br&gt;
     🦄[[Unicorns with bright, shiny fur will become more common because they are easier to see and can defend themselves better against griffins.|A new predator Incorrect]]
@@ -1164,15 +1141,13 @@ postdisplay[&quot;setupFreeText1&quot;] = function () {
   cursor: pointer;
   box-shadow: 0 0 4px rgba(178, 102, 255, 0.5);
   transition: box-shadow 0.3s ease;
-  margin: 6px auto;  /* center with vertical spacing */
+  margin: 6px auto;
   display: inline-block;
 }
-
 .glow-button:hover {
   box-shadow: 0 0 8px rgba(178, 102, 255, 0.8);
 }
 &lt;/style&gt;
-
 </tw-passagedata><tw-passagedata pid="19" name="StoryInit" tags="" position="1100,200" size="100,100">&lt;style&gt;
 /* Change default Twine choice link colors to purple */
 a.link-internal {
@@ -1320,18 +1295,18 @@ window.startStory = function () {
 &lt;&lt;/script&gt;&gt;
 </tw-passagedata><tw-passagedata pid="22" name="Unicorn Gathering" tags="" position="850,375" size="100,100">&lt;div style=&quot;text-align: center; max-width: 600px; margin: 0 auto; padding: 10px;&quot;&gt;
 
-  &lt;!-- Title without glow and normal color --&gt;
-  &lt;h2 style=&quot;font-size: 2em; font-weight: bold; margin-bottom: 15px;&quot;&gt;Unicorn Gathering&lt;/h2&gt;
+  &lt;!-- Title --&gt;
+  &lt;h2 style=&quot;font-size: 2em; font-weight: bold; margin-bottom: 10px;&quot;&gt;Unicorn Gathering&lt;/h2&gt;
 
-  &lt;!-- Image --&gt;
-  &lt;img src=&quot;Original_Background.png&quot; alt=&quot;Original_Background&quot; width=&quot;500&quot; style=&quot;margin: 0 auto 15px; display: block;&quot;&gt;
+  &lt;!-- Enlarged Image --&gt;
+  &lt;img src=&quot;Original_Background.png&quot; alt=&quot;Original_Background&quot; width=&quot;1200&quot; style=&quot;margin: 0 auto 10px; display: block;&quot;&gt;
 
-  &lt;!-- Play Audio Button Below the Image --&gt;
+  &lt;!-- Play Audio Button --&gt;
   &lt;audio id=&quot;audioFile&quot; src=&quot;Unicorn_gathering.mp3&quot;&gt;&lt;/audio&gt;
   &lt;button class=&quot;glow-button&quot; onclick=&quot;document.getElementById(&#39;audioFile&#39;).play()&quot;&gt;🔊The quest&lt;/button&gt;
 
   &lt;!-- Backpack Link --&gt;
-  &lt;div style=&quot;margin-top: 15px;&quot;&gt;
+  &lt;div style=&quot;margin-top: 10px;&quot;&gt;
     [[Onward with the quest.|Chapter 1 Changing resources]]
   &lt;/div&gt;
 
@@ -1339,9 +1314,8 @@ window.startStory = function () {
 
 &lt;!-- Reusable Styling --&gt;
 &lt;style&gt;
-/* Ensuring the button has no default browser styles */
 button {
-  all: unset; /* Remove all default styles */
+  all: unset;
 }
 
 .glow-button {
@@ -1354,14 +1328,13 @@ button {
   cursor: pointer;
   box-shadow: 0 0 5px rgba(178, 102, 255, 0.4);
   transition: box-shadow 0.3s ease;
-  margin-top: 15px; /* Adds some space between the button and other content */
+  margin-top: 10px;
 }
 
 .glow-button:hover {
   box-shadow: 0 0 10px rgba(178, 102, 255, 0.6);
 }
 &lt;/style&gt;
-
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
